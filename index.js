@@ -9,7 +9,6 @@ const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 
 const app = express();
 
-const express = require("express");
 const cors = require("cors");
 
 // Use CORS middleware
