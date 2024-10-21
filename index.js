@@ -8,6 +8,13 @@ const messageRouter = require("./routes/messageRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 
 const app = express();
+
+const express = require("express");
+const cors = require("cors");
+
+// Use CORS middleware
+app.use(cors("*"));
+
 dotenv.config();
 connectDB();
 const PORT = process.env.PORT || 5004;
